@@ -84,17 +84,6 @@ def webhook():
      else:
         return 'No new commit made', 400
 
-     
-    #  if request.method == 'POST':
-    #     repo = git.Repo("https://github.com/akshay-1005/bag-boost.git")
-    #     origin = repo.remotes.origin
-    #     pull_info = origin.pull()
-    #     return 'Code pulled and updated', 200
-
-    #  else:
-    # 	 return 'Wrong event type', 400
-    #      #print('------')
-
     # if len(pull_info) == 0:
     #      return json.dumps({'msg': "Didn't pull any information from remote!"})
     #  if pull_info[0].flags > 128:
