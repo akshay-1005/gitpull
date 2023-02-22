@@ -77,8 +77,9 @@ def webhook():
 
         repo = git.Repo("https://github.com/akshay-1005/bag-boost.git")
         origin = repo.remotes.origin
-        pull_info = origin.pull()
+        origin.pull()
         print(os.getcwd())
+        print("++++")
         return 'Code pulled and updated', 200
 
      else:
